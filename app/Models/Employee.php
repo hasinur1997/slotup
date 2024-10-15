@@ -11,11 +11,16 @@ class Employee extends Model
 
     public function services()
     {
-        return $this->belongsToMany(Employee::class);
+        return $this->belongsToMany(Service::class);
     }
 
     public function schedules()
     {
         return $this->hasMany(Schedule::class);
+    }
+
+    public function scheduleExclutions()
+    {
+        return $this->hasMany(Employee::class);
     }
 }

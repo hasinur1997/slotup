@@ -18,5 +18,4 @@
             "rollup": "npm:@rollup/wasm-node"
         }
     }
-
 }
